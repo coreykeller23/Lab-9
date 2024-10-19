@@ -1,0 +1,65 @@
+Author: Corey Keller
+Creation: 4/5/2024
+File Name: lab9utilityAndPsuedo
+Purpose: Design basic premise of the classes for Lab 9.
+
+Problem Description: Create 2 classes that are related, with one class object being used as a property of another class.
+Using the student, emergency contact, and address topics, create classes within the parameters of Lab 8.
+Address will need to be created first, so that student and emergency contact can use them.
+Then emergency contact will need to be created so it can be used in student.
+Then student will be created with the address and emergency contact classes as properties.
+Lastly, create the Teacher class, inheriting traits from the student class and create new properties.
+
+Step 1: Create Address class
+    a. Will need to include:
+        1. Number
+        2. Street Name
+        3. Option for apartment, building number, etc.
+        4. City
+        5. State
+        6. Zipcode
+    b. Create constructor
+        def __init__(self, numb, sn, ...):
+            self.number
+            self.streetName
+            ...
+    c. Define str return
+        def __str__(self):
+            "this is the address: " + self.number ...
+    d. Define setters
+        def setNumber(self, numb):
+            self.number=numb
+    f. Define getters
+        def getNumber(self):
+            self.number
+    g. Define additional actions
+        1. Check if in state
+
+Step 2: Create Emergency Contact class 
+    a. Repeat a-f in Address Class steps with the appropriate variable, property, and action names.
+    b. Additional actions
+        1. Get name?
+Step 3: Create Student class
+    a. Repeat a-f in Address Class steps with appropriate variable, property, and action names.
+    b. Additional actions
+        1. Check if GPA is correct format
+Step 4: Begin creation of Teacher class to start Lab 9
+    a. class Teacher(Student):
+        salary=""
+        facultyID=""
+    b. Inherit the constructor
+    c. def __str__(self):
+        return "Name: " + self.firstname...
+    d. setters
+        def setSalary(self, s):
+            ...
+        def setFacultyID(self, FID):
+            ...
+    f. getters
+        def getSalary(self):
+            return str(self.salary)
+        def getFacultyID(self)
+            ...
+    g. additional actions
+        def somethingToDoWithSalary(self):
+            ...
